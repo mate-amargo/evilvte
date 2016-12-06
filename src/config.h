@@ -1,11 +1,11 @@
 /* Use // to disable options                                                  */
 
-#define    BACKGROUND_IMAGE       ".config/evilvte/background.png"
-// #define BACKGROUND_SATURATION  0.4
+//#define    BACKGROUND_IMAGE       ".config/evilvte/background.png"
+#define BACKGROUND_SATURATION  0.5
 // #define BACKGROUND_SCROLLABLE  TRUE
 // #define BACKGROUND_TINT_COLOR  "black"
-// #define BACKGROUND_TRANSPARENT TRUE  /* Pseudo transparent background      */
-// #define BACKGROUND_OPACITY     TRUE  /* True transparent background        */
+#define BACKGROUND_TRANSPARENT TRUE  /* Pseudo transparent background      */
+#define BACKGROUND_OPACITY     TRUE  /* True transparent background        */
 // #define BACKSPACE_KEY /* Options: AUTO, BACKSPACE, DELETE, ERASE_TTY,      */
                          /*          DELETE_SEQUENCE                          */
 // #define DELETE_KEY    /* Options: AUTO, BACKSPACE, DELETE, ERASE_TTY,      */
@@ -51,9 +51,9 @@
 // #define COMMAND_FONT           TRUE  /* -fn option, to assign font & size  */
 // #define COMMAND_GEOMETRY       TRUE  /* -g +X+Y option, to assign geometry */
 // #define COMMAND_LOGIN_SHELL    TRUE  /* -ls option, to enable login shell  */
-// #define COMMAND_SET_TITLE      TRUE  /* -T or -title to set program title  */
+#define COMMAND_SET_TITLE      TRUE  /* -T or -title to set program title  */
 // #define COMMAND_SHOW_HELP      TRUE  /* -h option, show help               */
-#define    COMMAND_SHOW_OPTIONS   TRUE  /* -o option, show build-time options */
+//#define    COMMAND_SHOW_OPTIONS   TRUE  /* -o option, show build-time options */
 #define    COMMAND_SHOW_VERSION   TRUE  /* -v option, show program version    */
 // #define COMMAND_TAB_NUMBERS    TRUE  /* -[2-9] options, to set tab numbers */
 // #define CURSOR_BLINKS          TRUE
@@ -77,12 +77,12 @@
 // #define SCROLL_LINES           1000  /* Negative value means unlimited     */
 // #define SCROLL_ON_KEYSTROKE    TRUE
 // #define SCROLL_ON_OUTPUT       TRUE
-#define    SCROLLBAR              RIGHT /* Options: LEFT, RIGHT, OFF_L, OFF_R */
+//#define    SCROLLBAR              RIGHT /* Options: LEFT, RIGHT, OFF_L, OFF_R */
 // #define SHOW_WINDOW_BORDER     TRUE
 // #define SHOW_WINDOW_DECORATED  TRUE
-#define    SHOW_WINDOW_ICON       TRUE
-#define    STATUS_BAR             TRUE
-// #define WINDOW_TITLE_DYNAMIC   TRUE  /* for xterm escape sequences         */
+//#define    SHOW_WINDOW_ICON       TRUE
+//#define    STATUS_BAR             TRUE
+#define WINDOW_TITLE_DYNAMIC   TRUE  /* for xterm escape sequences         */
 #define    WORD_CHARS             "-A-Za-z0-9_$.+!*(),;:@&=?/~#%"
 
 #define    MENU                   TRUE
@@ -93,7 +93,7 @@
 // #define      MATCH_STRING_HTTP TRUE      /* Detect http(s) and ftp(s)      */
 // #define      MATCH_STRING_MAIL TRUE      /* Detect mailto:                 */
 // #define      MATCH_STRING_FILE TRUE      /* Detect file:///                */
-// #define MENU_CUSTOM            "Copy", "Separator", "Paste", "Separator"
+#define MENU_CUSTOM            "Copy", "Separator", "Paste", "Separator", "Toggle background"
            /* Options: "Copy",         "Zoom in",       "Add tab",
             *          "Paste",        "Zoom out",      "Remove tab",
             *          "Select all",   "Zoom default",  "New window",
@@ -113,7 +113,7 @@
             *          "Auto-click" (when there is only one effective menu item)
             */
 
-#define    TAB                    TRUE
+//#define    TAB                    TRUE
 // #define TAB_BORDER             0
 // #define TAB_CLOSE_BUTTON       TRUE
 // #define TAB_EXPANDED_WIDTH     TRUE
@@ -146,8 +146,8 @@
  * See /usr/include/gtk-?.0/gdk/gdkkeysyms.h for GDK_* definitions.           */
 
 #define    HOTKEY                       TRUE
-// #define HOTKEY_COPY                  CTRL_SHIFT(GDK_C) || CTRL_SHIFT(GDK_c)
-// #define HOTKEY_PASTE                 CTRL_SHIFT(GDK_V) || CTRL_SHIFT(GDK_v)
+#define HOTKEY_COPY                  CTRL_SHIFT(GDK_C) || CTRL_SHIFT(GDK_c)
+#define HOTKEY_PASTE                 CTRL_SHIFT(GDK_V) || CTRL_SHIFT(GDK_v)
 // #define HOTKEY_SELECT_ALL            CTRL_SHIFT(GDK_S) || CTRL_SHIFT(GDK_s)
 // #define HOTKEY_COLOR_BACKGROUND      CTRL_SHIFT(GDK_B) || CTRL_SHIFT(GDK_b)
 // #define HOTKEY_EDIT_ENCODING         CTRL_SHIFT(GDK_U) || CTRL_SHIFT(GDK_u)
@@ -169,10 +169,10 @@
 // #define HOTKEY_SEARCH_PREVIOUS       CTRL_SHIFT(GDK_G) || CTRL_SHIFT(GDK_g)
 // #define HOTKEY_SEARCH_NEXT           CTRL(GDK_g) || CTRL(GDK_G)
 // #define        SEARCH_CASE_SENSITIVE TRUE
-#define    HOTKEY_TAB_ADD               CTRL_SHIFT(GDK_T) || CTRL_SHIFT(GDK_t)
-#define    HOTKEY_TAB_REMOVE            CTRL_SHIFT(GDK_W) || CTRL_SHIFT(GDK_w)
-#define    HOTKEY_TAB_PREVIOUS          CTRL(GDK_Page_Up)
-#define    HOTKEY_TAB_NEXT              CTRL(GDK_Page_Down)
+//#define    HOTKEY_TAB_ADD               CTRL_SHIFT(GDK_T) || CTRL_SHIFT(GDK_t)
+//#define    HOTKEY_TAB_REMOVE            CTRL_SHIFT(GDK_W) || CTRL_SHIFT(GDK_w)
+//#define    HOTKEY_TAB_PREVIOUS          CTRL(GDK_Page_Up)
+//#define    HOTKEY_TAB_NEXT              CTRL(GDK_Page_Down)
 // #define HOTKEY_TAB_FIRST             CTRL(GDK_Home)
 // #define HOTKEY_TAB_LAST              CTRL(GDK_End)
 // #define ALT_NUMBER_GO_TO_TAB_NUMBER  TRUE
@@ -186,8 +186,9 @@
 // #define HOTKEY_TOGGLE_SCROLLBAR      CTRL(GDK_Right)
 // #define HOTKEY_TOGGLE_STATUS_BAR     CTRL(GDK_Down)
 // #define HOTKEY_TOGGLE_TABBAR         CTRL(GDK_Up)
-// #define HOTKEY_TOGGLE_BACKGROUND     CTRL(GDK_KP_Delete)
-// #define TOGGLE_BG_ORDER    "Image", "Transparent", "No background", "Opacity"
+#define HOTKEY_TOGGLE_BACKGROUND     CTRL_SHIFT(GDK_B)
+//#define TOGGLE_BG_ORDER    "Image", "Transparent", "No background", "Opacity"
+#define TOGGLE_BG_ORDER    "No background", "Transparent"
 
 // #define LABEL_DEFAULT_ENCODING       "_Default Encoding"
 // #define LABEL_DIALOG_BACKGROUND_TINT "_Background tint color"
