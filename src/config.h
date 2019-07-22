@@ -1,11 +1,11 @@
 /* Use // to disable options                                                  */
 
 //#define    BACKGROUND_IMAGE       ".config/evilvte/background.png"
-#define BACKGROUND_SATURATION  0.5
+//#define BACKGROUND_SATURATION  0.5
 // #define BACKGROUND_SCROLLABLE  TRUE
 // #define BACKGROUND_TINT_COLOR  "black"
-#define BACKGROUND_TRANSPARENT TRUE  /* Pseudo transparent background      */
-#define BACKGROUND_OPACITY     TRUE  /* True transparent background        */
+//#define BACKGROUND_TRANSPARENT TRUE  /* Pseudo transparent background      */
+//#define BACKGROUND_OPACITY     TRUE  /* True transparent background        */
 // #define BACKSPACE_KEY /* Options: AUTO, BACKSPACE, DELETE, ERASE_TTY,      */
                          /*          DELETE_SEQUENCE                          */
 // #define DELETE_KEY    /* Options: AUTO, BACKSPACE, DELETE, ERASE_TTY,      */
@@ -54,7 +54,7 @@
 #define COMMAND_SET_TITLE      TRUE  /* -T or -title to set program title  */
 // #define COMMAND_SHOW_HELP      TRUE  /* -h option, show help               */
 //#define    COMMAND_SHOW_OPTIONS   TRUE  /* -o option, show build-time options */
-#define    COMMAND_SHOW_VERSION   TRUE  /* -v option, show program version    */
+//#define    COMMAND_SHOW_VERSION   TRUE  /* -v option, show program version    */
 // #define COMMAND_TAB_NUMBERS    TRUE  /* -[2-9] options, to set tab numbers */
 // #define CURSOR_BLINKS          TRUE
 // #define CURSOR_COLOR           "blue"
@@ -85,7 +85,7 @@
 #define WINDOW_TITLE_DYNAMIC   TRUE  /* for xterm escape sequences         */
 #define    WORD_CHARS             "-A-Za-z0-9_$.+!*(),;:@&=?/~#%"
 
-#define    MENU                   TRUE
+//#define    MENU                   TRUE
 // #define MENU_ENCODING_LIST     "BIG-5", "Default Encoding", "GBK", "EUC-JP"
 // #define MENU_MATCH_STRING_EXEC "firefox"
 // #define      MATCH_STRING_L    "firefox" /* left click to open without menu*/
@@ -93,7 +93,7 @@
 // #define      MATCH_STRING_HTTP TRUE      /* Detect http(s) and ftp(s)      */
 // #define      MATCH_STRING_MAIL TRUE      /* Detect mailto:                 */
 // #define      MATCH_STRING_FILE TRUE      /* Detect file:///                */
-#define MENU_CUSTOM            "Copy", "Separator", "Paste", "Separator", "Toggle background"
+//#define MENU_CUSTOM            "Copy", "Separator", "Paste", "Separator", "Toggle background"
            /* Options: "Copy",         "Zoom in",       "Add tab",
             *          "Paste",        "Zoom out",      "Remove tab",
             *          "Select all",   "Zoom default",  "New window",
@@ -186,9 +186,9 @@
 // #define HOTKEY_TOGGLE_SCROLLBAR      CTRL(GDK_Right)
 // #define HOTKEY_TOGGLE_STATUS_BAR     CTRL(GDK_Down)
 // #define HOTKEY_TOGGLE_TABBAR         CTRL(GDK_Up)
-#define HOTKEY_TOGGLE_BACKGROUND     CTRL_SHIFT(GDK_B)
+//#define HOTKEY_TOGGLE_BACKGROUND     CTRL_SHIFT(GDK_B)
 //#define TOGGLE_BG_ORDER    "Image", "Transparent", "No background", "Opacity"
-#define TOGGLE_BG_ORDER    "No background", "Transparent"
+//#define TOGGLE_BG_ORDER    "No background", "Transparent"
 
 // #define LABEL_DEFAULT_ENCODING       "_Default Encoding"
 // #define LABEL_DIALOG_BACKGROUND_TINT "_Background tint color"
