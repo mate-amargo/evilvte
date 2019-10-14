@@ -1,18 +1,18 @@
 /* Use // to disable options                                                  */
 
 //#define    BACKGROUND_IMAGE       ".config/evilvte/background.png"
-//#define BACKGROUND_SATURATION  0.5
+#define BACKGROUND_SATURATION  0.2
 // #define BACKGROUND_SCROLLABLE  TRUE
 // #define BACKGROUND_TINT_COLOR  "black"
 //#define BACKGROUND_TRANSPARENT TRUE  /* Pseudo transparent background      */
-//#define BACKGROUND_OPACITY     TRUE  /* True transparent background        */
+#define BACKGROUND_OPACITY     TRUE  /* True transparent background        */
 // #define BACKSPACE_KEY /* Options: AUTO, BACKSPACE, DELETE, ERASE_TTY,      */
                          /*          DELETE_SEQUENCE                          */
 // #define DELETE_KEY    /* Options: AUTO, BACKSPACE, DELETE, ERASE_TTY,      */
                          /*          DELETE_SEQUENCE                          */
 // #define BELL_AUDIBLE           TRUE
-// #define BELL_VISIBLE           TRUE
-// #define BELL_URGENT            TRUE
+#define BELL_VISIBLE           TRUE
+#define BELL_URGENT            TRUE
 // #define BUTTON_ORDER_BY_RCFILE TRUE
 // #define CLOSE_DIALOG           TRUE  /* Dialog to confirm close event      */
 // #define CLOSE_SAFELY           TRUE  /* Do not kill running applications   */
@@ -186,9 +186,9 @@
 // #define HOTKEY_TOGGLE_SCROLLBAR      CTRL(GDK_Right)
 // #define HOTKEY_TOGGLE_STATUS_BAR     CTRL(GDK_Down)
 // #define HOTKEY_TOGGLE_TABBAR         CTRL(GDK_Up)
-//#define HOTKEY_TOGGLE_BACKGROUND     CTRL_SHIFT(GDK_B)
+#define HOTKEY_TOGGLE_BACKGROUND     CTRL_SHIFT(GDK_B)
 //#define TOGGLE_BG_ORDER    "Image", "Transparent", "No background", "Opacity"
-//#define TOGGLE_BG_ORDER    "No background", "Transparent"
+#define TOGGLE_BG_ORDER    "Transparent", "No background"
 
 // #define LABEL_DEFAULT_ENCODING       "_Default Encoding"
 // #define LABEL_DIALOG_BACKGROUND_TINT "_Background tint color"
